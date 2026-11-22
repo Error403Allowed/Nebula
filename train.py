@@ -99,5 +99,5 @@ else:
     print("Training complete!")
 
     # Save your trained model weights
-    torch.save(model.state_dict(), 'astronomy_model.pth')
-    print("Model saved as astronomy_model.pth")
+    torch.save(model.state_dict(), 'cosmology_model.pth')
+    print("Model saved as cosmology_model.pth")

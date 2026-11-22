@@ -7,7 +7,7 @@ from PIL import Image
 
 # page setup
 st.set_page_config(
-    page_title="Astronomy Image Classifier",
+    page_title="Cosmology Image Classifier",
     page_icon="✨",
     layout="centered"
 )
@@ -33,11 +33,11 @@ def load_model():
     model.fc = nn.Linear(num_ftrs, len(CLASS_NAMES))
     
     # load our saved weights file
-    model_path = 'astronomy_model.pth'
+    model_path = 'cosmology_model.pth'
     if os.path.exists(model_path):
         model.load_state_dict(torch.load(model_path, map_location=device))
     else:
-        st.warning("Hold up! 'astronomy_model.pth' not found. Make sure to run train.py first.")
+        st.warning("Hold up! 'cosmology_model.pth' not found. Make sure to run train.py first.")
         
     model = model.to(device)
     model.eval()
@@ -46,7 +46,7 @@ def load_model():
 model, device = load_model()
 
 # ui stuff
-st.title("🔭 Astronomy Image Classifier")
+st.title("Cosmology Image Classifier")
 st.write("Drop a space image below to see what the model thinks it is!")
 
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])

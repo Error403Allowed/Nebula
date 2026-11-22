@@ -1,4 +1,4 @@
-# Nebula: AI-Powered Astronomy Image Classifier
+# Nebula: AI-Powered Cosmology Image Classifier
 
 This is a personal interest project I decided to persue for my year 10 science class. It is an interactive deep learning application built with **PyTorch** and **Streamlit** that classifies astronomical objects (galaxies, nebulae, stars, and supernovas) from uploaded images. 
 
@@ -23,7 +23,7 @@ Nebula/
 ├── venv/               # Python virtual environment
 ├── app.py              # Streamlit web application UI
 ├── train.py            # Model training script
-├── astronomy_model.pth # Generated after training your model
+├── cosmology_model.pth # Generated after training your model
 └── README.md           # Project documentation
 
 ```
