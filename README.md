@@ -26,5 +26,7 @@ Nebula/
 ├── astronomy_model.pth # Generated after training your model
 └── README.md           # Project documentation
 
+```
+
 ## Project Structure
 Please refer to the requirements.txt file and run `pip install -r requirements.txt`
